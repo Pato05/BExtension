@@ -1,0 +1,1 @@
+window.addEventListener("load",function(){chrome.storage.sync.get("enabled",function(e){document.getElementById("enExt").checked=e.enabled}),document.getElementById("enExt").addEventListener("change",function(e){!0===this.checked?chrome.storage.sync.set({enabled:!0}):chrome.storage.sync.set({enabled:!1})})});

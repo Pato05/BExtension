@@ -1,0 +1,1 @@
+void 0!==chrome.runtime.onInstalled&&chrome.runtime.onInstalled.addListener(function(){chrome.storage.sync.set({enabled:!0})}),chrome.storage.sync.get("enabled",function(e){1==e.enabled&&document.querySelectorAll("p,span,button,code,pre,h1,h2,h3,h4,h5,h6").forEach(e=>{e.innerText=e.innerText.replace(/b/gi,"🅱️")})});

@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "B to 🅱️",
+    "version": "0.1",
+    "permissions": ["declarativeContent", "storage"],
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": ["b2b.js"]
+      }
+    ],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "B to 🅱️"
+    }
+  }
